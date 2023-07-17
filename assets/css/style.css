@@ -1,0 +1,431 @@
+/* ========== google fonts link ========== */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+/* ========== common css start ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+:root {
+  --header-bg: #0a0a26;
+  --primary-color: #05132d;
+  --secondary-color: #0bd4bd;
+  --white-color: #ffffff;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #ffffff;
+}
+ul{
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.theme-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  color: var(--white-color);
+  transition: 0.4s;
+}
+.theme-btn:hover {
+  background-color: var(--secondary-color);
+}
+.sec_padding {
+  padding: 6rem 0;
+}
+.sec_heading{
+    margin-bottom: 4rem;
+}
+.sec_heading h4 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
+.sec_heading p {
+  color: var(--white-color);
+}
+/* ========== common css end ========== */
+/* ========== top_sec start here ========== */
+#top_header {
+  background-color: var(--header-bg);
+  padding: 2rem 0;
+}
+#top_header .contact-info i {
+  color: var(--white-color);
+  margin-right: 0.7rem;
+}
+#top_header .contact-info i.phone {
+  margin-left: 3rem;
+}
+#top_header .social-info a {
+  margin-left: 2rem;
+}
+#top_header .social-info a i {
+  font-size: 2rem;
+}
+#top_header .social-info a:hover i{
+  color: var(--secondary-color);
+}
+/* ========== top_sec end here ========== */
+/* ========== nav_sec start here ========== */
+nav .logo {
+  font-size: 3.5rem;
+  color: var(--white-color);
+}
+nav .navbar-brand:hover {
+  color: var(--white-color);
+}
+nav .logo span {
+  color: var(--secondary-color);
+}
+nav .navbar-nav .nav-item {
+  margin-left: 3rem;
+}
+nav .navbar-nav .nav-item .nav-link {
+  color: var(--white-color);
+  position: relative;
+  transition: 0.4s;
+}
+nav .navbar-nav .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  display: none;
+}
+nav .navbar-nav .nav-item:hover .nav-link {
+  color: var(--secondary-color);
+}
+nav .navbar-nav .nav-item:hover .nav-link::after {
+  display: block;
+}
+nav {
+  box-shadow: 0 2px 7px -4px var(--secondary-color);
+}
+/* ========== nav_sec end here ========== */
+/* ========== hero_sec start here ========== */
+#hero_sec {
+  padding: 9rem 0;
+}
+#hero_sec .left-hero h1 {
+  font-size: 4rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+#hero_sec .left-hero h2 {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+#hero_sec .left-hero p {
+  color: var(--white-color);
+}
+#hero_sec .right-hero {
+  background-color: var(--header-bg);
+  border-radius: 50%;
+}
+#hero_sec .right-hero img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: 2px dashed var(--secondary-color);
+  margin: 15px;
+}
+/* ========== hero_sec end here ========== */
+/* ========== skill_sec start here ========== */
+/* skill_bar section start */
+.skills-bar {
+  color: #444444;
+}
+.skills-bar .bar {
+  margin-top: 1.5rem;
+}
+.skills-bar .bar .info {
+  margin-bottom: 5px;
+}
+.skills-bar h5 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4), 0px 4px 13px rgba(0, 0, 0, 0.1);
+}
+.skills-bar .bar .info span {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 1.6rem;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+/* Bar itself */
+.skills-bar .bar .progress-line {
+  height: 1rem;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+/* Skill's Bar */
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--secondary-color);
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Skill's length */
+.bar .progress-line.html span {
+  width: 90%;
+}
+.bar .progress-line.css span {
+  width: 80%;
+}
+.bar .progress-line.javascript span {
+  width: 60%;
+}
+.bar .progress-line.jquery span {
+  width: 65%;
+}
+.bar .progress-line.bootstrap span {
+  width: 75%;
+}
+.bar .progress-line.react span {
+  width: 50%;
+}
+/* Background for the percentage numbers */
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+/* Percentage numbers */
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: var(--header-bg);
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "80%";
+}
+.progress-line.javascript span::after {
+  content: "60%";
+}
+.progress-line.jquery span::after {
+  content: "65%";
+}
+.progress-line.bootstrap span::after {
+  content: "75%";
+}
+.progress-line.react span::after {
+  content: "50%";
+}
+/* Animations */
+/* Bar's animation */
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+/* Skill's name animation */
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+/* Percentage number's animation */
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+/* ========== skill_sec end here ========== */
+/* ========== service_sec start here ========== */
+.service-item{
+  padding: 2.5rem 4rem;
+  margin-top: 3rem;
+  box-shadow: 0 2px 7px -4px var(--secondary-color);
+  min-height: 23rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.service-item i{
+  font-size: 4rem;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+}
+.service-item h4{
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+.service-item p{
+  color: var(--white-color);
+}
+/* ========== service_sec end here ========== */
+/* ========== work_sec start here ========== */
+.owl-carousel .item img{
+  position: relative;
+}
+.owl-carousel .item h4{
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #ff4500;
+  font-size: 1.3rem;
+}
+/* ========== work_sec end here ========== */
+/* ========== contact_sec start here ========== */
+#contact_sec form .form-control{
+  font-size: 1.6rem;
+  padding: 1rem;
+  background: var(--header-bg);
+  color: var(--white-color);
+}
+#contact_sec form input::placeholder{
+  color: var(--white-color);
+}
+#contact_sec form textarea::placeholder{
+  color: var(--white-color);
+}
+/* ========== contact_sec end here ========== */
+/* ========== footer_sec start here ========== */
+#footer_sec{
+  box-shadow: 2px 0 7px -3px var(--secondary-color);
+}
+.footer-logo {
+  font-size: 3.5rem;
+  color: var(--white-color);
+}
+.footer-logo:hover {
+  color: var(--white-color);
+}
+.footer-logo span {
+  color: var(--secondary-color);
+}
+#footer_sec .footer-left h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+#footer_sec .footer-left .social-site h5{
+  color: var(--white-color);
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.4rem;
+}
+#footer_sec .footer-left .social-site a{
+  transition: 0.4s;
+}
+#footer_sec .footer-left .social-site a:hover i{
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+#footer_sec .footer-left .social-site a i{
+  font-size: 2rem;
+  margin-right: 1rem;
+  padding: 7px;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+}
+#footer_sec .footer-right h5,
+#footer_sec .footer-center h5{
+  font-size: 3.5rem;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+}
+#footer_sec .footer-center ul li{
+  transition: 0.4s;
+  padding: 5px 0px;
+}
+#footer_sec .footer-center ul li:hover a{
+  color: var(--secondary-color);
+  margin-left: 5px;
+}
+.res_menu li{
+  list-style: none;
+  display: block;
+  padding: 5px 0px;
+  transition: 0.4s;
+}
+.res_menu li:hover a{
+  color: var(--secondary-color);
+}
+.res_menu li a{
+  color: #fff;
+  
+}
+.footer-right ul li a{
+  color: #fff;
+}
+.footer-right ul li a i{
+  padding-right: 8px;
+}
+/* ========== footer_sec end here ========== */
+/* ========== copyright_sec start here ========== */
+#copyright_sec{
+  background: var(--header-bg);
+  padding: 1.6rem;
+}
+#copyright_sec p{
+  color: var(--white-color);
+  margin-bottom: 0;
+}
+#copyright_sec p a{
+  color: var(--secondary-color);
+}
+
+/* ========== copyright_sec end here ========== */
+
