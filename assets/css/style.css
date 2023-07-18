@@ -32,7 +32,7 @@ a {
 a:hover {
   color: #ffffff;
 }
-ul{
+ul {
   padding: 0;
 }
 ul li {
@@ -57,8 +57,8 @@ ul li {
 .sec_padding {
   padding: 6rem 0;
 }
-.sec_heading{
-    margin-bottom: 4rem;
+.sec_heading {
+  margin-bottom: 4rem;
 }
 .sec_heading h4 {
   color: var(--secondary-color);
@@ -86,7 +86,7 @@ ul li {
 #top_header .social-info a i {
   font-size: 2rem;
 }
-#top_header .social-info a:hover i{
+#top_header .social-info a:hover i {
   color: var(--secondary-color);
 }
 /* ========== top_sec end here ========== */
@@ -291,7 +291,7 @@ nav {
 }
 /* ========== skill_sec end here ========== */
 /* ========== service_sec start here ========== */
-.service-item{
+.service-item {
   padding: 2.5rem 4rem;
   margin-top: 3rem;
   box-shadow: 0 2px 7px -4px var(--secondary-color);
@@ -299,25 +299,25 @@ nav {
   border-radius: 7px;
   cursor: pointer;
 }
-.service-item i{
+.service-item i {
   font-size: 4rem;
   color: var(--white-color);
   margin-bottom: 2rem;
 }
-.service-item h4{
+.service-item h4 {
   font-size: 2.5rem;
   color: var(--secondary-color);
   margin-bottom: 1rem;
 }
-.service-item p{
+.service-item p {
   color: var(--white-color);
 }
 /* ========== service_sec end here ========== */
 /* ========== work_sec start here ========== */
-.owl-carousel .item img{
+.owl-carousel .item img {
   position: relative;
 }
-.owl-carousel .item h4{
+.owl-carousel .item h4 {
   position: absolute;
   left: 0;
   bottom: 10%;
@@ -329,21 +329,21 @@ nav {
 }
 /* ========== work_sec end here ========== */
 /* ========== contact_sec start here ========== */
-#contact_sec form .form-control{
+#contact_sec form .form-control {
   font-size: 1.6rem;
   padding: 1rem;
   background: var(--header-bg);
   color: var(--white-color);
 }
-#contact_sec form input::placeholder{
+#contact_sec form input::placeholder {
   color: var(--white-color);
 }
-#contact_sec form textarea::placeholder{
+#contact_sec form textarea::placeholder {
   color: var(--white-color);
 }
 /* ========== contact_sec end here ========== */
 /* ========== footer_sec start here ========== */
-#footer_sec{
+#footer_sec {
   box-shadow: 2px 0 7px -3px var(--secondary-color);
 }
 .footer-logo {
@@ -360,20 +360,20 @@ nav {
   font-size: 2rem;
   color: var(--secondary-color);
 }
-#footer_sec .footer-left .social-site h5{
+#footer_sec .footer-left .social-site h5 {
   color: var(--white-color);
   font-size: 1.8rem;
   margin-top: 2.5rem;
   margin-bottom: 1.4rem;
 }
-#footer_sec .footer-left .social-site a{
+#footer_sec .footer-left .social-site a {
   transition: 0.4s;
 }
-#footer_sec .footer-left .social-site a:hover i{
+#footer_sec .footer-left .social-site a:hover i {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
 }
-#footer_sec .footer-left .social-site a i{
+#footer_sec .footer-left .social-site a i {
   font-size: 2rem;
   margin-right: 1rem;
   padding: 7px;
@@ -381,51 +381,49 @@ nav {
   border-radius: 7px;
 }
 #footer_sec .footer-right h5,
-#footer_sec .footer-center h5{
+#footer_sec .footer-center h5 {
   font-size: 3.5rem;
   color: var(--white-color);
   margin-bottom: 2rem;
 }
-#footer_sec .footer-center ul li{
+#footer_sec .footer-center ul li {
   transition: 0.4s;
   padding: 5px 0px;
 }
-#footer_sec .footer-center ul li:hover a{
+#footer_sec .footer-center ul li:hover a {
   color: var(--secondary-color);
   margin-left: 5px;
 }
-.res_menu li{
+.res_menu li {
   list-style: none;
   display: block;
   padding: 5px 0px;
   transition: 0.4s;
 }
-.res_menu li:hover a{
+.res_menu li:hover a {
   color: var(--secondary-color);
 }
-.res_menu li a{
-  color: #fff;
-  
-}
-.footer-right ul li a{
+.res_menu li a {
   color: #fff;
 }
-.footer-right ul li a i{
+.footer-right ul li a {
+  color: #fff;
+}
+.footer-right ul li a i {
   padding-right: 8px;
 }
 /* ========== footer_sec end here ========== */
 /* ========== copyright_sec start here ========== */
-#copyright_sec{
+#copyright_sec {
   background: var(--header-bg);
   padding: 1.6rem;
 }
-#copyright_sec p{
+#copyright_sec p {
   color: var(--white-color);
   margin-bottom: 0;
 }
-#copyright_sec p a{
+#copyright_sec p a {
   color: var(--secondary-color);
 }
 
 /* ========== copyright_sec end here ========== */
-
