@@ -119,6 +119,12 @@
     p{
         font-size: 1.5rem;
     }
+    .contact-info span{
+      display: block;
+    }
+    #top_header .contact-info i.phone {
+      margin-left: 0rem;
+    }
     .left-hero{
         text-align: center;
     }
