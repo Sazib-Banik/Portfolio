@@ -137,11 +137,11 @@
   #hero_sec .left-hero h1 {
     font-size: 3.5rem;
   }
-  .contact-info span {
-    display: block;
-  }
   #top_header .contact-info i.phone {
     margin-left: 0rem;
+  }
+  .social-info{
+    display: none;
   }
   .left-hero {
     text-align: center;
