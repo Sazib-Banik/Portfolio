@@ -1,0 +1,141 @@
+/* extra Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 575px) {
+  .top_left span {
+    display: block;
+  }
+  .top_right {
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  .menu .nav-item .nav-link {
+    padding: 10px 15px;
+    text-align: center;
+  }
+  .skills-bar {
+    margin-top: 20px;
+  }
+  .footer_left {
+    padding-bottom: 10px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .service-item {
+        min-height: 29rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .service-item {
+        min-height: 29rem;
+        padding: 2.5rem;
+    }
+    #footer_sec .footer-right h5, #footer_sec .footer-center h5 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #hero_sec .right-hero img {
+        width: 25rem;
+        height: 25rem;
+    }
+    .service-item h4 {
+        font-size: 2.2rem;
+    }
+    #footer_sec .footer-right h5, #footer_sec .footer-center h5 {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .sec_heading p {
+        font-size: 1.4rem;
+    }
+       
+}
+@media (max-width: 991px){
+    #navbar .navbar-toggler i {
+        color: #0bd4bd !important;
+    }
+    #navbar .navbar-toggler {
+        border: 1px solid#0bd4bd !important;
+      }
+    
+      nav .navbar-toggler:hover {
+        box-shadow: none;
+      }
+    .service-item {
+        padding: 2.5rem 2.5rem;
+        min-height: 32rem;
+    }
+    #work_sec .card{
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 767px){
+    #hero_sec .right-hero {
+        margin-top: 4rem;
+    }
+    .footer-left{
+        text-align: center;
+    }
+    #footer_sec .footer-right h5, #footer_sec .footer-center h5 {
+        font-size: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    .footer-right{
+        float: right;
+    }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+    p{
+        font-size: 1.5rem;
+    }
+    .left-hero{
+        text-align: center;
+    }
+    .sec_heading p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .contact-info{
+        text-align: center;
+    }
+    .social-info{
+        margin-top: 1rem;
+        text-align: center;
+        float: none !important;
+    }
+    .service-item {
+        padding: 2.5rem 2.5rem;
+        min-height: 23rem;
+    }
+}
